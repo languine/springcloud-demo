@@ -1,0 +1,24 @@
+server:
+  port: 8761
+spring:
+  application:
+    name: register-server
+eureka:
+  instance:
+    hostname: localhost
+    prefer-ip-address: true
+  client:
+    register-with-eureka: false   #是否将自己注册到Eureka服务中，本身就是所以无需注册
+    fetch-registry: false          #是否从Eureka中获取注册信息
+    service-url:                     #EurekaServer注册中心地址
+      defaultZone: http://localhost:8761/eureka/      #http://localhost:8767/eureka/,http://localhost:8768/eureka/
+ #,http://localhost:8767/eureka/  , http://localhost:8768/eureka/
+
+
+
+
+
+
+
+
+
