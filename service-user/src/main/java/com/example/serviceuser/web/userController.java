@@ -21,7 +21,9 @@ public class userController {
 
     @GetMapping("/hello")
     public String demo(){
+    system.out.println("成功了")
         return "hello," + port;
+        
     }
 
     @GetMapping("/item")
